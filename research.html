@@ -26,6 +26,7 @@ title: Research | Yoann Coudert
 			box-sizing: border-box;
 			width: 100%;
 			max-height: 176px;
+			object-fit: contain;
 			padding: 5px;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			border-radius: 4px;
@@ -82,7 +83,7 @@ title: Research | Yoann Coudert
 		<p class="where">Mathematical Geosciences</p>
 		<p class="desc">Hexahedral meshing for reservoir simulation, by extrusion of a 2D quadrilateral mesh. The method smoothly honors features such as faults and horizons.</p>
 		<div class="links">
-			<a href="https://hal.science/hal-04540667v1/document">
+			<a href="https://hal.science/hal-04540667/document">
 				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
 			</a>
 		</div>
@@ -131,6 +132,107 @@ title: Research | Yoann Coudert
 	</div>
 </div>
 
+<h2>2022</h2>
+
+<div class="pub">
+	<div class="im">
+		<img class="teaser" src="/assets/images/perspective.webp" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">Semi-Automatic Perspective Lines from Paintings</p>
+		<p class="author"><em class="me"></em>, Elmar Eisemann, Ricardo Marroquim</p>
+		<p class="where">Eurographics Workshop on Graphics and Cultural Heritage</p>
+		<p class="desc">A graphical interface helping to extract perspective lines from paintings.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-03920890/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+			<a href="https://github.com/Nanored4498/Painting-Analysis">
+				<i class="fab fa-github" aria-hidden="true"></i> Code
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="pub">
+	<div class="im">
+		<img class="teaser" src="/assets/images/space_filling_curves.png" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">Closed Space-Filling Curves with Controlled Orientation for 3D Printing</p>
+		<p class="author">Adrien Bedel, <em class="me"></em>, Jonàs Martínez, Rahnuma Islam Nishat, Sue Whitesides, Sylvain Lefebvre</p>
+		<p class="where">Eurographics</p>
+		<p class="desc">Closed space-filling curves allow each solid layer of a 3D print to be extruded in one continuous motion. We optimize such curves to align with a given vector field or to have a uniform distribution of orientations. The method has two steps: a combinatorial optimization of Hamiltonian cycles in a graph, followed by a geometric refinement.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-03185200/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+			<a href="{{ site.files_url }}/ClosedSpaceFillingCurve.odp">
+				<i class="fab fa-slideshare" aria-hidden="true"></i> Slides
+			</a>
+			<a href="{{ site.files_url }}/CSFC_fast_forward.mp4">
+				<i class="fa fa-fast-forward" aria-hidden="true"></i> Fast forward
+			</a>
+			<a href="https://github.com/mfx-inria/controllable-space-filling-curve">
+				<i class="fab fa-github" aria-hidden="true"></i> Code
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="pub">
+	<div class="im">
+		<img class="teaser" src="/assets/images/pace_logo.svg" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">PACE Solver Description: DreyFVS</p>
+		<p class="author">Gabriel Bathie, Gaétan Berthe, <em class="me"></em>, David Desobry, Amadeus Reinald, Mathis Rocton</p>
+		<p class="where">International Symposium on Parameterized and Exact Computation (IPEC)</p>
+		<p class="desc">A heuristic directed feedback vertex set (DFVS) solver written in C++. Given a directed graph, it returns a small set of vertices whose removal makes the graph acyclic. It was submitted to the heuristic track of the 2022 PACE Challenge, where it ranked second 🥈.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-03920659/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+			<a href="https://github.com/Nanored4498/DreyFVS">
+				<i class="fab fa-github" aria-hidden="true"></i> Code
+			</a>
+		</div>
+	</div>
+</div>
+
+<h2>2021</h2>
+
+<div class="pub">
+	<div class="im">
+		<img class="teaser" src="/assets/images/non-ortho-ff.webp" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">Designing 2D and 3D Non-Orthogonal Frame Fields</p>
+		<p class="author">David Desobry, <em class="me"></em>, Etienne Corman, Nicolas Ray, Dmitry Sokolov</p>
+		<p class="where">Symposium on Solid and Physical Modeling (SPM)</p>
+		<p class="desc">Design of frame fields on surface and volumetric meshes, with control over the orthogonality of the frames. Built on the spherical harmonic representation of 3D cross fields, the method generates anisotropic quadrilateral and hexahedral meshes, which is especially useful for remeshing CAD models.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-03287233/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+		</div>
+	</div>
+</div>
+
 <br>
 
 <h1>PhD Thesis</h1>
+
+<div class="pub">
+	<div class="txt" style="width: 100%;">
+		<p class="title">Champs de repères 2,5D pour la génération de maillages hexaédriques</p>
+		<p class="author"><em class="me"></em></p>
+		<p class="where">Université de Lorraine</p>
+		<p class="desc">Hexahedral meshes are the preferred representation for many numerical simulations, but they are hard to generate automatically. This thesis builds on global parametrization, where frame fields can produce singularity graphs incompatible with any valid hexahedral mesh. The polycube approach avoids this by forbidding internal singularities, at the cost of mesh quality. Instead, the thesis allows internal singularities all oriented along one direction, which amounts to extruding a quadrilateral mesh. The method is illustrated on geological domain remeshing.</p>
+		<div class="links">
+			<a href="https://hal.science/tel-04907393/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+		</div>
+	</div>
+</div>
