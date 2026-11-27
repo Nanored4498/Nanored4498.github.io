@@ -31,6 +31,15 @@ header {
 		padding-left: .9em;
 		padding-right: .9em;
 	}
+
+	a {
+		color: #7a8288;
+	}
+
+	a:hover {
+		color: #5c6266;
+		text-decoration-color: #bdc1c4;
+	}
 }
 
 main {
@@ -57,7 +66,7 @@ a {
 	position: relative;
 	padding-top: .3em;
 	padding-bottom: .3em;
-	color: #7a8288;
+	color: #01426a;
 	text-decoration: underline;
 	text-decoration-color: transparent;
 	text-decoration-thickness: .2em;
@@ -66,8 +75,8 @@ a {
 }
 
 a:hover {
-	color: #5c6266;
-	text-decoration-color: #bdc1c4;
+	color: #013250;
+	text-decoration-color: #026299;
 }
 
 @media (min-width: 80em) {
