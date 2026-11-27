@@ -8,7 +8,7 @@ title: Research | Yoann Coudert
 		margin-top: 1.5em;
 		border-top: 1px solid;
 		text-align: right;
-		margin-bottom: -1em;
+		margin-bottom: -0.7em;
 	}
 
 	p {
@@ -16,14 +16,38 @@ title: Research | Yoann Coudert
 	}
 
 	.pub {
-		margin-bottom: 0.6em;
+		margin-bottom: 1em;
+		display: flex;
+	}
+
+	.im {
+		width: 25%;
+		.teaser {
+			box-sizing: border-box;
+			width: 100%;
+			max-height: 176px;
+			padding: 5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 4px;
+		}
+	}
+
+	.txt {
+		width: 75%;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	.title {
+		margin-bottom: 0.2em;
 		font-family: 'Alegreya', Georgia, serif;
 		font-weight: bold;
-		font-size: 1.15em;
+		font-size: 1.2em;
 		color: #212529;
+	}
+
+	.author, .desc {
+		line-height: 130%;
 	}
 
 	.me::before {
@@ -32,7 +56,15 @@ title: Research | Yoann Coudert
 	}
 
 	.where {
+		margin-bottom: 0.2em;
 		color: #01426a;
+	}
+
+	.links {
+		display: flex;
+		gap: 1em;
+		margin-top: 0.1em;
+		font-size: 1.1em;
 	}
 </style>
 
@@ -41,19 +73,62 @@ title: Research | Yoann Coudert
 <h2>2024</h2>
 
 <div class="pub">
-	<p class="title">2.5D Hexahedral Meshing for Reservoir Simulations</p>
-	<p class="author">David Lopez, <em class="me"></em>, David Desobry, Alexandre Benedicto, Wan-Chiu Li, Cédric Borgese, Nicolas Ray, Dmitry Sokolov, Jeanne Pellerin</p>
-	<p class="where">Mathematical Geosciences</p>
+	<div class="im">
+		<img class="teaser" src="/assets/images/25D_hex_mesh.webp" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">2.5D Hexahedral Meshing for Reservoir Simulations</p>
+		<p class="author">David Lopez, <em class="me"></em>, David Desobry, Alexandre Benedicto, Wan-Chiu Li, Cédric Borgese, Nicolas Ray, Dmitry Sokolov, Jeanne Pellerin</p>
+		<p class="where">Mathematical Geosciences</p>
+		<p class="desc">Hexahedral meshing for reservoir simulation, by extrusion of a 2D quadrilateral mesh. The method smoothly honors features such as faults and horizons.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-04540667v1/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+		</div>
+	</div>
 </div>
 
 <div class="pub">
-	<p class="title">Quad Mesh Quantization Without a T-Mesh</p>
+	<div class="im">
+		<img class="teaser" src="/assets/images/quantization.webp" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">Quad Mesh Quantization Without a T-Mesh</p>
+		<p class="author"><em class="me"></em>, David Desobry, Martin Heistermann, David Bommes, Nicolas Ray, Dmitry Sokolov</p>
+		<p class="where">Eurographics</p>
+		<p class="desc">Quad remeshing via global parametrization is a mixed-integer optimization problem, and common strategies rely on a so-called quantization step. We propose a new quantization algorithm that is simpler than previous ones, as it does not require computing an embedded T-mesh. Instead, it relies on triangular mesh decimation.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-04395861/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+			<a href="{{ site.files_url }}/slides_quantization.pdf">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> Slides
+			</a>
+		</div>
+	</div>
 </div>
 
 <h2>2023</h2>
 
 <div class="pub">
-	<p class="title">PACE Solver Description: Touiouidth</p>
+	<div class="im">
+		<img class="teaser" src="/assets/images/pace_logo.svg" alt="teaser img">
+	</div>
+	<div class="txt">
+		<p class="title">PACE Solver Description: Touiouidth</p>
+		<p class="author">Gaétan Berthe, <em class="me"></em>, Alexander Dobler, Laure Morelle, Amadeus Reinald, Mathis Rocton</p>
+		<p class="where">International Symposium on Parameterized and Exact Computation (IPEC)</p>
+		<p class="desc">A twin-width solver written in C++. Given a graph, it computes its twin-width along with an associated contraction sequence. It was submitted to the exact track of the 2023 PACE Challenge, where it ranked third 🥉.</p>
+		<div class="links">
+			<a href="https://hal.science/hal-04395895/document">
+				<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
+			</a>
+			<a href="https://github.com/Doblalex/Touiouidth">
+				<i class="fab fa-github" aria-hidden="true"></i> Code
+			</a>
+		</div>
+	</div>
 </div>
 
 <br>
